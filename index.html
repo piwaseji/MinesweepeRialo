@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MinesweepeRialo</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Logo + Judul -->
+  <h1>
+    <img src="rialo.png" alt="Rialo Logo" class="logo">
+    <span class="shine">MinesweepeRialo</span>
+    <img src="rialo.png" alt="Rialo Logo" class="logo">
+  </h1>
+
+  <!-- Board Container -->
+  <div class="board-container">
+    <!-- Popup Overlay -->
+    <div id="popup">
+      <div class="popup-box" id="popup-message"></div>
+    </div>
+
+    <!-- Stopwatch -->
+    <div id="timer">⏱ 0s</div>
+
+    <!-- Game Board -->
+    <div id="board"></div>
+
+    <!-- Mode Selector -->
+    <div id="modes">
+      <button onclick="setMode(10, 10)" title="Easy 10x10">😁</button>
+      <button onclick="setMode(20, 40)" title="Medium 10x20">😨</button>
+      <button onclick="setMode(30, 90)" title="Hard 10x30">😱</button>
+    </div>
+  </div>
+
+  <!-- ✅ Status -->
+  <p id="status"></p>
+
+  <!-- ✅ Restart -->
+  <button id="restart" onclick="createBoard()">Restart Game</button>
+
+  <!-- ✅ Script game -->
+  <script src="game.js"></script>
+</body>
+</html>
